@@ -1,0 +1,36 @@
+# Fichiers de configuration sensibles
+config.php
+
+# Fichiers temporaires
+*.tmp
+*.log
+*.swp
+*.bak
+
+# Dossiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Fichiers PHP temporaires
+*.php~
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Fichiers de sauvegarde
+*~
+*.orig
+
+# Node modules (si utilisé)
+node_modules/
+
+# Fichiers de cache
+cache/
+tmp/
