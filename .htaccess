@@ -1,0 +1,105 @@
+# New Strong Protection - Configuration Apache
+# Sécurité et optimisation
+
+# Activer le moteur de réécriture
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
+# Protéger les fichiers sensibles
+<FilesMatch "^(config\.php|email_debug\.log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Empêcher l'accès aux fichiers de configuration
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Empêcher l'accès aux logs
+<Files "email_debug.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Empêcher l'affichage des répertoires
+Options -Indexes
+
+# Protection contre les injections
+<IfModule mod_headers.c>
+    # Protection XSS
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Empêcher le MIME sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Protection contre le clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Content Security Policy
+    Header set Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com;"
+    
+    # Référer Policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Compression GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache des fichiers statiques
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS et JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+</IfModule>
+
+# Forcer HTTPS (décommenter si vous avez un certificat SSL)
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# Limiter la taille des uploads (si nécessaire)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+
+# Désactiver l'affichage des erreurs PHP en production
+php_flag display_errors Off
+php_flag display_startup_errors Off
+
+# Activer le log des erreurs
+php_flag log_errors On
+php_value error_log /var/log/php_errors.log
+
+# Timeout pour les scripts PHP
+php_value max_execution_time 30
+php_value max_input_time 30
+
+# Charset par défaut
+AddDefaultCharset UTF-8
+
+# Types MIME
+<IfModule mod_mime.c>
+    AddType application/javascript js
+    AddType text/css css
+    AddType image/svg+xml svg
+</IfModule>

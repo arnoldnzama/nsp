@@ -1,591 +1,613 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>security force one - Sécurité, Protection et Surveillance 24h/24</title>
-    <meta name="description"
-        content="Services professionnels de sécurité, gardiennage et protection pour entreprises et particuliers.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="icone/logo.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Strong Protection — Sécurité Privée & Protection en RDC</title>
+  <meta name="description" content="New Strong Protection, entreprise congolaise de sécurité privée. Gardiennage, protection rapprochée, sécurité électronique et gestion des risques en RDC.">
+  <link rel="icon" href="icone/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header" role="banner">
-        <nav class="navbar" role="navigation" aria-label="Navigation principale">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
-                    <img src="logo/logo.png" alt="Logo Security Force One" class="logo">
-                    <span class="logo-text">Security Force One</span>
-                </a>
-                <ul class="nav-menu" role="menubar">
-                    <li role="none"><a href="index.html#accueil" class="nav-link active" role="menuitem">Accueil</a>
-                    </li>
-                    <li role="none"><a href="apropos.html" class="nav-link" role="menuitem">À Propos</a></li>
-                    <li role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
-                    <li role="none"><a href="implantation.html" class="nav-link" role="menuitem">Implantation</a></li>
-                    <li role="none"><a href="engagement.html" class="nav-link" role="menuitem">Engagement</a></li>
-                    <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
-                </ul>
-                <button class="hamburger" aria-label="Menu de navigation" aria-expanded="false"
-                    aria-controls="nav-menu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </button>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="accueil" class="hero swiper">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <div class="hero-content-split">
-                    <div class="hero-text-left">
-                        <h1 class="hero-title"><span class="highlight">La sécurité qui rassure.</span></h1>
-                        <p class="hero-subtitle">Nous déployons des agents formés, disciplinés et équipés pour assurer
-                            la surveillance, la prévention et la protection de vos biens et de vos proches, 24h/24.</p>
-                        <div class="hero-cta">
-                            <a href="solutions.html" class="btn-primary large">Découvrir nos solutions</a>
-                        </div>
-                    </div>
-                    <div class="hero-image-right">
-                        <img src="img/Charte Security F1-27-4.png" alt="Agent de sécurité Security Force One"
-                            class="hero-img">
-                    </div>
-                </div>
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-left">
+        <a href="tel:+243898244292"><i class="fas fa-phone"></i> +243 898 244 292</a>
+        <a href="mailto:soc@forceone.cd"><i class="fas fa-envelope"></i> soc@forceone.cd</a>
+        <span><i class="fas fa-map-marker-alt"></i> Ndjili, Kinshasa — RDC</span>
+      </div>
+      <div class="header-top-right">
+        <a href="https://www.facebook.com/share/1BRuvQUmBj/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo/logo.png" alt="New Strong Protection" class="logo">
+        <div class="logo-text">New Strong Protection<span>Protection · Sécurité · Confiance</span></div>
+      </a>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        <li><a href="apropos.html" class="nav-link">À Propos</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="implantation.html" class="nav-link">Implantation</a></li>
+        <li><a href="engagement.html" class="nav-link">Engagement</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Devis Gratuit</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero swiper" id="accueil">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <div class="container" style="position:relative;z-index:2;width:100%;">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-shield-alt"></i> Sécurité Professionnelle en RDC</div>
+            <h1 class="hero-title">
+              <span class="line">Une sécurité fiable pour</span>
+              <span class="line gold">vos divers services</span>
+            </h1>
+            <p class="hero-subtitle">Depuis près de 4 ans, notre dynamisme sur le terrain ne cesse de convaincre les utilisateurs de nos différents services. Agents sélectionnés sur l'efficacité pour assurer votre protection 24h/24.</p>
+            <div class="hero-actions">
+              <a href="services.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Nos Services</a>
+              <a href="contact.html" class="btn btn-outline">Devis Gratuit</a>
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <div class="hero-content-split">
-                    <div class="hero-text-left">
-                        <h1 class="hero-title">Expertise & <span class="highlight">Innovation technologique</span></h1>
-                        <p class="hero-subtitle">Protection maximale pour un service de gardiennage professionnel,
-                            garantissant sécurité renforcée, vigilance
-                            permanente et intervention rapide pour la protection des personnes et des biens.</p>
-                        <div class="hero-cta">
-                            <a href="#expertise" class="btn-primary large">Notre expertise</a>
-                        </div>
-                    </div>
-                    <div class="hero-image-right">
-                        <img src="img/Charte Security F1-23.png" alt="Security Force One - Technologie"
-                            class="hero-img">
-                    </div>
-                </div>
+            <div class="hero-stats">
+              <div class="stat-item"><span class="stat-number">4+</span><span class="stat-label">Années d'expérience</span></div>
+              <div class="stat-item"><span class="stat-number">100+</span><span class="stat-label">Gardiens déployés</span></div>
+              <div class="stat-item"><span class="stat-number">24/7</span><span class="stat-label">Disponibilité</span></div>
             </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <img src="img/formation/1.jpg" alt="Agent New Strong Protection">
+              <div class="hero-img-frame"></div>
+            </div>
+            <div class="hero-accent">Force · Sécurité</div>
+          </div>
         </div>
-        <!-- Swiper components -->
-        <div class="swiper-pagination"></div>
-    </section>
+      </div>
+    </div>
 
-    <!-- About Us Section -->
-    <section id="apropos" class="about-us-section">
-        <div class="container">
-            <div class="about-us-grid">
-                <div class="about-us-image">
-                    <img src="img/Charte Security F1-27-2.png" alt="Security Force One Team">
-                </div>
-                <div class="about-us-content">
-                    <h2 class="section-title">Qui sommes-nous ?</h2>
-                    <p class="about-text">
-                        Security Force One est une entreprise congolaise de sécurité privée dont le siège social est
-                        situé à Isiro, avec des représentations dans plusieurs provinces de la République Démocratique
-                        du Congo.
-                    </p>
-                    <p class="about-text">
-                        Nous avons été créés avec une vision claire : offrir des services de sécurité professionnels,
-                        modernes et conformes aux standards internationaux, tout en tenant compte des réalités locales.
-                    </p>
-
-                </div>
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <div class="container" style="position:relative;z-index:2;width:100%;">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-microchip"></i> Technologie & Innovation</div>
+            <h1 class="hero-title">
+              <span class="line">Expertise &</span>
+              <span class="line gold">Innovation</span>
+            </h1>
+            <p class="hero-subtitle">Équipements modernes et parfaitement utilisés. Nos agents sont sélectionnés sur l'efficacité avec une approche pragmatique et rationnelle de la clientèle.</p>
+            <div class="hero-actions">
+              <a href="services.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Découvrir</a>
+              <a href="contact.html" class="btn btn-outline">Nous Contacter</a>
             </div>
+            <div class="hero-stats">
+              <div class="stat-item"><span class="stat-number">Multi</span><span class="stat-label">Secteurs couverts</span></div>
+              <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Satisfaction client</span></div>
+              <div class="stat-item"><span class="stat-number">Rapide</span><span class="stat-label">Intervention efficace</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <img src="img/formation/2.jpg" alt="New Strong Protection Technologie">
+              <div class="hero-img-frame"></div>
+            </div>
+            <div class="hero-accent">RDC · Isiro</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Section Solutions Intégrées -->
-    <section id="solutions" class="integrated-solutions">
-        <div class="container">
-            <div class="solutions-header">
-                <h2>Votre partenaire sécurité en République Démocratique du Congo</h2>
-                <p>Basée à Isiro et présente dans plusieurs provinces de la RDC, Security Force One est une société
-                    spécialisée dans les solutions globales de sécurité. Nous accompagnons entreprises, institutions,
-                    ONG, sites miniers, commerces et particuliers dans la protection de leurs biens, de leurs
-                    collaborateurs et de leurs activités.</p>
-                <p>Grâce à une équipe rigoureusement sélectionnée, formée et encadrée, nous mettons à votre disposition
-                    des services fiables, professionnels et adaptés aux réalités sécuritaires du pays.</p>
-            </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</section>
 
-            <div class="solutions-grid">
-                <div class="solution-column">
-                    <h3>Nos services</h3>
-                    <ul class="solution-list">
-                        <li><i class="fas fa-shield-alt"></i> Gardiennage professionnel</li>
-                        <li><i class="fas fa-video"></i> Sécurité électronique</li>
-                        <li><i class="fas fa-search"></i> Audit de sécurité</li>
-                        <li><i class="fas fa-user-graduate"></i> Formation en sécurité</li>
-                        <li><i class="fas fa-user-secret"></i> Escorte et protection rapprochée</li>
-                    </ul>
-                </div>
+<!-- ===== TICKER ===== -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <div class="ticker-inner">
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Gardiennage Professionnel</span>
+    <span class="ticker-item"><i class="fas fa-bell"></i> Intervention & Alarmes</span>
+    <span class="ticker-item"><i class="fas fa-user-shield"></i> Escorte & Gardes du Corps VIP</span>
+    <span class="ticker-item"><i class="fas fa-tower-cell"></i> Garde de Sites Techniques</span>
+    <span class="ticker-item"><i class="fas fa-users-cog"></i> Formation & Placement</span>
+    <span class="ticker-item"><i class="fas fa-hands-helping"></i> Services Événementiels</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Gardiennage Professionnel</span>
+    <span class="ticker-item"><i class="fas fa-bell"></i> Intervention & Alarmes</span>
+    <span class="ticker-item"><i class="fas fa-user-shield"></i> Escorte & Gardes du Corps VIP</span>
+    <span class="ticker-item"><i class="fas fa-tower-cell"></i> Garde de Sites Techniques</span>
+    <span class="ticker-item"><i class="fas fa-users-cog"></i> Formation & Placement</span>
+    <span class="ticker-item"><i class="fas fa-hands-helping"></i> Services Événementiels</span>
+  </div>
+</div>
 
-                <div class="solution-column">
-                    <h3>Pourquoi choisir Security Force One ?</h3>
-                    <ul class="why-us-list">
-                        <li><i class="fas fa-check-circle"></i> Personnel qualifié et discipliné</li>
-                        <li><i class="fas fa-check-circle"></i> Couverture nationale</li>
-                        <li><i class="fas fa-check-circle"></i> Réactivité et disponibilité 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Approche personnalisée</li>
-                        <li><i class="fas fa-check-circle"></i> Respect strict de la confidentialité</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="solutions-footer">
-                <p><strong>Security Force One, la sécurité au service de votre tranquillité.</strong></p>
-            </div>
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section" id="apropos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap animate-on-scroll">
+        <img src="img/formation/3.jpg" alt="Équipe New Strong Protection">
+        <div class="about-img-border"></div>
+        <div class="about-img-overlay">
+          <span class="big-num">4+</span>
+          <span class="big-label">Ans d'expertise</span>
         </div>
-    </section>
-
-    <!-- Binary CTA Section -->
-    <section class="binary-cta">
-        <div class="container binary-cta-container">
-            <div class="cta-block solutions-cta" style="background-image: url('img/Charte Security F1-27-2.png');">
-                <div class="cta-overlay"></div>
-                <div class="cta-content">
-                    <h2>Une sécurité efficace, adaptée à vos enjeux</h2>
-                    <a href="#" class="btn-ghost">Découvrez nos solutions</a>
-                </div>
+      </div>
+      <div class="about-content animate-on-scroll">
+        <span class="section-label">Qui sommes-nous</span>
+        <h2 class="section-title">New Strong Protection,<br><span>votre partenaire sécurité</span></h2>
+        <p class="about-text">New Strong Protection (NSP en sigle) existe depuis près de 4 ans. Force est de constater qu'actuellement son dynamisme sur le terrain ne cesse de convaincre les utilisateurs de ses différents services.</p>
+        <p class="about-text">NSP œuvre en ayant pour toile de fond une sécurité tous azimuts incluant les aspects personnels et domestiques de manière à vous mettre à l'abri des événements fortuits. La connaissance et l'expérience sont deux atouts majeurs qui sont l'apanage de NSP.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <i class="fas fa-check-circle"></i>
+            <div class="about-feature-text">
+              <h4>Agents sélectionnés sur l'efficacité</h4>
+              <p>Nos agents sont rigoureusement sélectionnés et formés pour garantir votre sécurité</p>
             </div>
-            <div class="cta-block career-cta" style="background-image: url('img/Charte Security F1-27-3.png');">
-                <div class="cta-overlay"></div>
-                <div class="cta-content">
-                    <h2>Transformez votre engagement en carrière</h2>
-                    <a href="contact.html" class="btn-ghost">Explorer les possibilités de carrières</a>
-                </div>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-cogs"></i>
+            <div class="about-feature-text">
+              <h4>Équipements modernes</h4>
+              <p>Mise à disposition d'équipements modernes et parfaitement utilisés selon vos désirs</p>
             </div>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-users"></i>
+            <div class="about-feature-text">
+              <h4>Management pragmatique</h4>
+              <p>Approche de la clientèle par un management pragmatique et rationnel</p>
+            </div>
+          </div>
         </div>
-    </section>
+        <a href="apropos.html" class="btn btn-gold" style="margin-top:1.5rem;"><i class="fas fa-arrow-right"></i> En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Notre Gamme de Services Section -->
-    <section id="secteurs" class="services-range">
-        <div class="container range-container">
-            <div class="range-text">
-                <span class="range-subtitle">Notre offre</span>
-                <h2 class="range-title">Des services conçus pour vous</h2>
-                <div class="range-cta-container">
-                    <a href="solutions.html" class="btn-range-cta">En savoir plus sur nos services</a>
-                </div>
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="services-header animate-on-scroll">
+      <span class="section-label">Ce que nous faisons</span>
+      <h2 class="section-title">Nos <span>Services</span></h2>
+      <p class="section-desc">Des solutions de sécurité intégrées, adaptées à chaque besoin et à chaque environnement.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <span class="service-num">01</span>
+        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Gardiennage Professionnel</h3>
+        <p>Garde des bâtiments, entrepôts, fermes, concessions, domaines, bureaux et résidences domestiques. Nos gardiens sont employés dans les hôtels, stations-services, banques, restaurants VIP, supermarchés et autres.</p>
+        <a href="services.html#gardiennage" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card featured animate-on-scroll">
+        <span class="service-num">02</span>
+        <div class="service-icon"><i class="fas fa-bell"></i></div>
+        <h3>Intervention & Alarmes</h3>
+        <p>Interventions efficaces de nos agents appuyés par des boîtiers d'alarmes et concours de la police nationale pour une réponse rapide.</p>
+        <a href="services.html#electronique" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll">
+        <span class="service-num">03</span>
+        <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+        <h3>Escorte & Gardes du Corps VIP</h3>
+        <p>Escorte et accompagnement de personnalités, gardes du corps VIP, et convois de fonds et matières précieuses.</p>
+        <a href="services.html#escorte" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll">
+        <span class="service-num">04</span>
+        <div class="service-icon"><i class="fas fa-tower-cell"></i></div>
+        <h3>Garde de Sites Techniques</h3>
+        <p>Garde des sites GSM, CDMA et autres infrastructures techniques nécessitant une surveillance spécialisée.</p>
+        <a href="services.html#audit" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll">
+        <span class="service-num">05</span>
+        <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+        <h3>Formation & Placement</h3>
+        <p>Formation de chauffeurs et placement de caissiers, nettoyeuses, manutentionnaires, baby-sitters et personnel domestique.</p>
+        <a href="services.html#formation" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll">
+        <span class="service-num">06</span>
+        <div class="service-icon"><i class="fas fa-hands-helping"></i></div>
+        <h3>Services Événementiels</h3>
+        <p>Organisation de services festifs et funéraires. En cas de nécessité, nous offrons une assistance tous azimuts.</p>
+        <a href="services.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div class="range-list">
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Contrôle sécurisé à distance</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="range-item-description">
-                            <p>Le contrôle sécurisé à distance désigne l'ensemble des technologies et mécanismes permettant de surveiller, gérer ou piloter un système, un appareil ou une infrastructure depuis un emplacement distant, tout en garantissant un haut niveau de sécurité informatique et de protection des données.</p>
-                        </div>
-                    </div>
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Sécurité opérationnelle</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="range-item-description">
-                            <p>La sécurité opérationnelle (souvent appelée OPSEC – Operational Security) est une discipline stratégique visant à protéger les informations sensibles liées aux activités, aux processus et aux opérations d'une organisation afin d'éviter qu'elles ne soient exploitées par des acteurs malveillants.</p>
-                        </div>
-                    </div>
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Sûreté</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="range-item-description">
-                            <p>La sûreté désigne l'ensemble des mesures, dispositifs et actions destinés à protéger les personnes, les biens et les informations contre des actes intentionnels malveillants tels que le vol, le sabotage, l'espionnage, l'intrusion ou le terrorisme.</p>
-                        </div>
-                    </div>
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Sécurité</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="range-item-description">
-                            <p>La sécurité désigne l'ensemble des mesures, dispositifs et stratégies mis en place pour protéger des personnes, des biens, des informations ou des infrastructures contre les risques, menaces ou dangers. Elle vise à prévenir, détecter et réagir face aux situations pouvant causer des dommages physiques, matériels, financiers ou numériques.</p>
-                        </div>
-                    </div>
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Systèmes de protection électronique</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="range-item">
-                        <div class="range-item-header">
-                            <span>Gestion stratégique des risques</span>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="range-item-description">
-                            <p>La gestion stratégique des risques est un processus structuré par lequel une organisation identifie, analyse, évalue et maîtrise les risques susceptibles d'affecter l'atteinte de ses objectifs à long terme. Elle s'inscrit dans la gouvernance globale de l'entreprise et vise à anticiper les menaces potentielles tout en exploitant les opportunités liées à l'incertitude.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- ===== STATS ===== -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block">
+        <span class="big">100<span class="plus">+</span></span>
+        <span class="lbl">Gardiens déployés</span>
+      </div>
+      <div class="stat-block">
+        <span class="big">4<span class="plus">+</span></span>
+        <span class="lbl">Années d'expérience</span>
+      </div>
+      <div class="stat-block">
+        <span class="big">Multi</span>
+        <span class="lbl">Secteurs couverts</span>
+      </div>
+      <div class="stat-block">
+        <span class="big">24<span class="plus">/7</span></span>
+        <span class="lbl">Disponibilité totale</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="range-diagram">
-                <!-- Circular SVG Diagram matching the user's reference -->
-                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Central Hub -->
-                    <circle cx="200" cy="200" r="45" fill="var(--accent-color)" opacity="0.1" />
-                    <circle cx="200" cy="200" r="35" fill="var(--primary-color)" />
-                    <circle cx="200" cy="200" r="28" fill="none" stroke="white" stroke-width="1.5"
-                        stroke-dasharray="4 2" />
-                    <g transform="translate(188, 188) scale(1)">
-                        <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-                            fill="white" />
-                    </g>
-                    <text x="200" y="248" text-anchor="middle" font-size="9" fill="var(--accent-color)"
-                        font-weight="700">CONSEIL</text>
-
-                    <!-- Connecting Lines (Circles) -->
-                    <circle cx="200" cy="200" r="100" fill="none" stroke="var(--primary-color)" stroke-width="1"
-                        stroke-dasharray="2 4" opacity="0.3" />
-
-                    <!-- Satellite Nodes -->
-                    <!-- Sûreté (Top) -->
-                    <g transform="translate(200, 100)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path
-                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text y="-40" text-anchor="middle" font-size="6.5" fill="var(--accent-color)"
-                            font-weight="700">Sûreté</text>
-                    </g>
-
-                    <!-- Sécurité Mobile (Top Right) -->
-                    <g transform="translate(286, 150)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path
-                                d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text x="35" y="-10" text-anchor="start" font-size="6.5" fill="var(--accent-color)"
-                            font-weight="700" transform="rotate(25)">
-                            <tspan x="35" dy="0">Sécurité</tspan>
-                            <tspan x="35" dy="8">opérationnelle</tspan>
-                        </text>
-                    </g>
-
-                    <!-- Services à Distance (Bottom Right) -->
-                    <g transform="translate(286, 250)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path
-                                d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text x="35" y="10" text-anchor="start" font-size="6.5" fill="var(--accent-color)"
-                            font-weight="700" transform="rotate(-25)">
-                            <tspan x="35" dy="0">Contrôle sécurisé</tspan>
-                            <tspan x="35" dy="8">à distance</tspan>
-                        </text>
-                    </g>
-
-                    <!-- Sécurité Électronique (Bottom) -->
-                    <g transform="translate(200, 300)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path
-                                d="M12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm7-9h-3.17L14 4h-4L8.17 6H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text y="45" text-anchor="middle" font-size="6.5" fill="var(--accent-color)" font-weight="700">
-                            <tspan x="0" dy="-5">Systèmes de protection</tspan>
-                            <tspan x="0" dy="8">électronique</tspan>
-                        </text>
-                    </g>
-
-                    <!-- Sécurité (Bottom Left) -->
-                    <g transform="translate(114, 250)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text x="-35" y="10" text-anchor="end" font-size="6.5" fill="var(--accent-color)"
-                            font-weight="700" transform="rotate(25)">Sécurité</text>
-                    </g>
-
-                    <!-- Risk Management (Top Left) -->
-                    <g transform="translate(114, 150)">
-                        <circle r="30" fill="white" stroke="var(--primary-color)" stroke-width="1" />
-                        <g transform="translate(-12, -12)">
-                            <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"
-                                fill="var(--accent-color)" transform="scale(1)" />
-                        </g>
-                        <text x="-35" y="-10" text-anchor="end" font-size="6.5" fill="var(--accent-color)"
-                            font-weight="700" transform="rotate(-25)">
-                            <tspan x="-35" dy="0">Gestion stratégique</tspan>
-                            <tspan x="-35" dy="8">des risques</tspan>
-                        </text>
-                    </g>
-                </svg>
-            </div>
+<!-- ===== WHY US ===== -->
+<section class="why-section" id="pourquoi">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual animate-on-scroll">
+        <img src="img/formation/4.jpg" alt="New Strong Protection Operations">
+        <div class="why-visual-overlay"></div>
+        <div class="why-stats-overlay">
+          <div class="why-stat"><span class="num">100%</span><span class="lbl">Satisfaction</span></div>
+          <div class="why-stat"><span class="num">4+</span><span class="lbl">Ans d'expérience</span></div>
+          <div class="why-stat"><span class="num">Multi</span><span class="lbl">Secteurs</span></div>
         </div>
-    </section>
-
-    <!-- Notre approche Section -->
-    <section id="apropos" class="approach-section">
-        <div class="container">
-            <div class="approach-grid">
-                <div class="approach-left">
-                    <span class="approach-subtitle">Notre méthodologie en quatre phases</span>
-                    <h2 class="approach-title">La sécurité qui vous ressemble</h2>
-                    <p class="approach-description">
-                        Peu importe la nature de votre activité, Security Force One vous accompagne avec des solutions
-                        de sécurité fiables et personnalisées. Grâce à une évaluation approfondie de vos risques, nous
-                        mettons en place un dispositif sur mesure, parfaitement adapté à vos exigences, pour garantir
-                        une protection efficace et durable.
-                    </p>
-                    <div class="approach-ctas">
-                        <a href="contact.html" class="btn-approach-primary">Votre sécurité, notre engagement au
-                            quotidien</a>
-                        <a href="#" class="btn-approach-secondary">Découvrez nos solutions</a>
-                    </div>
-                </div>
-                <div class="approach-right">
-                    <div class="steps-container">
-                        <div class="step-item">
-                            <span class="step-number">01</span>
-                            <div class="step-content">
-                                <h3>Entrons en relation</h3>
-                                <p>Vous avez un projet ou des exigences spécifiques en matière de sécurité ?
-                                    Contactez-nous dès aujourd’hui et
-                                    expliquez-nous vos attentes afin que nous vous proposions une solution adaptée.</p>
-                            </div>
-                        </div>
-                        <div class="step-item">
-                            <span class="step-number">02</span>
-                            <div class="step-content">
-                                <h3>Comprendre pour mieux protéger</h3>
-                                <p>Parce que chaque situation est unique, nous évaluons vos contraintes et
-                                    vos priorités afin de prévenir les risques et garantir la continuité de
-                                    votre activité en toute sérénité.</p>
-                            </div>
-                        </div>
-                        <div class="step-item">
-                            <span class="step-number">03</span>
-                            <div class="step-content">
-                                <h3>Suggestion</h3>
-                                <p>ASuite à cette évaluation, nous concevons une solution
-                                    de sécurité sur mesure correspondant aux menaces identifiées et vous
-                                    présentons notre offre détaillée</p>
-                            </div>
-                        </div>
-                        <div class="step-item">
-                            <span class="step-number">04</span>
-                            <div class="step-content">
-                                <h3>Déploiement et administration</h3>
-                                <p>Une fois votre accord confirmé, notre
-                                    équipe se charge d’implémenter votre solution de sécurité sur mesure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="why-content animate-on-scroll">
+        <span class="section-label">Pourquoi nous choisir</span>
+        <h2 class="section-title">La sécurité qui<br><span>vous ressemble</span></h2>
+        <p class="section-desc">NSP tient compte de toutes les dimensions de l'homme et des circonstances. Nous vous accompagnons avec des solutions fiables adaptées à vos besoins spécifiques.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-item-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="why-item-text">
+              <h4>Sécurité tous azimuts</h4>
+              <p>Protection incluant les aspects personnels et domestiques pour vous mettre à l'abri des événements fortuits.</p>
             </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><i class="fas fa-cogs"></i></div>
+            <div class="why-item-text">
+              <h4>Équipements modernes</h4>
+              <p>Mise à disposition selon vos désirs d'équipements modernes et parfaitement utilisés.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><i class="fas fa-user-check"></i></div>
+            <div class="why-item-text">
+              <h4>Agents sélectionnés sur l'efficacité</h4>
+              <p>La connaissance et l'expérience sont deux atouts majeurs qui sont l'apanage de NSP.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><i class="fas fa-handshake"></i></div>
+            <div class="why-item-text">
+              <h4>Management pragmatique</h4>
+              <p>Approche de la clientèle par un management pragmatique et rationnel.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><i class="fas fa-users"></i></div>
+            <div class="why-item-text">
+              <h4>Approche humaine</h4>
+              <p>Nous tenons compte de toutes les dimensions de l'homme et des circonstances.</p>
+            </div>
+          </div>
         </div>
-    </section>
+        <a href="contact.html" class="btn btn-gold" style="margin-top:2rem;"><i class="fas fa-arrow-right"></i> Obtenir un devis</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-banner">
-                <div class="newsletter-content-left">
-                    <h2 class="newsletter-title">rotégez votre entreprise, protégez votre avenir</h2>
-                </div>
-                <div class="newsletter-content-right">
-                    <p class="newsletter-description">Inscrivez-vous à notre newsletter pour recevoir les derniers
-                        conseils en sécurité et nos actualités exclusives.</p>
-                    <form class="newsletter-form">
-                        <div class="input-wrapper">
-                            <input type="email" placeholder="Votre adresse email" required>
-                            <button type="submit" class="newsletter-btn">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!-- ===== PROCESS ===== -->
+<section class="process-section" id="processus">
+  <div class="container">
+    <div class="process-header animate-on-scroll">
+      <span class="section-label">Notre méthode</span>
+      <h2 class="section-title">Comment nous <span>travaillons</span></h2>
+      <p class="section-desc">Une méthodologie en quatre phases pour une protection efficace et durable.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step animate-on-scroll">
+        <div class="step-num">01</div>
+        <h3>Prise de contact</h3>
+        <p>Vous nous exposez vos besoins et vos exigences spécifiques en matière de sécurité.</p>
+      </div>
+      <div class="process-step animate-on-scroll">
+        <div class="step-num">02</div>
+        <h3>Analyse & Évaluation</h3>
+        <p>Nous évaluons vos contraintes, vos risques et vos priorités pour mieux vous protéger.</p>
+      </div>
+      <div class="process-step animate-on-scroll">
+        <div class="step-num">03</div>
+        <h3>Proposition sur mesure</h3>
+        <p>Nous concevons une solution adaptée aux menaces identifiées et vous présentons notre offre.</p>
+      </div>
+      <div class="process-step animate-on-scroll">
+        <div class="step-num">04</div>
+        <h3>Déploiement & Suivi</h3>
+        <p>Notre équipe implémente votre solution et assure un suivi rigoureux et continu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTORS ===== -->
+<section class="sectors-section" id="secteurs">
+  <div class="container">
+    <div class="sectors-header animate-on-scroll">
+      <span class="section-label">Nos secteurs</span>
+      <h2 class="section-title">Nous protégeons <span>tous les secteurs</span></h2>
+    </div>
+    <div class="sectors-grid">
+      <div class="sector-card">
+        <img src="img/formation/5.jpg" alt="Sociétés Commerciales">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-store"></i></div>
+          <h3>Sociétés Commerciales</h3>
+          <p>Protection de commerces, supermarchés, restaurants VIP et chaînes de distribution.</p>
         </div>
-    </section>
-
-
-
-    <!-- Section Conseils & Actualités -->
-    <section id="insights" class="insights">
-        <div class="container">
-            <div class="insights-header">
-                <h2>Conseils & Actualités Sécurité</h2>
-                <p>Découvrez les dernières tendances et nos conseils d'experts pour sécuriser votre environnement.
-                </p>
-            </div>
-            <div class="insight-grid">
-                <article class="insight-card">
-                    <div class="insight-image" style="background-image: url('img/Charte Security F1-24.png');"></div>
-                    <div class="insight-content">
-                        <span class="insight-tag">Innovation</span>
-                        <h3>Protection maximale pour gardiennage rofessionnel</h3>
-                        <p>Des équipements de protection fiables pour assurer la sécurité, la vigilance et la confiance
-                            sur chaque site.
-                        </p>
-                        <div class="insight-footer">Lire l'article <svg viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" width="18" height="18" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></div>
-                    </div>
-                </article>
-                <article class="insight-card">
-                    <div class="insight-image" style="background-image: url('img/Charte Security F1-27-2.png');"></div>
-                    <div class="insight-content">
-                        <span class="insight-tag">Conseil</span>
-                        <h3>Sécuriser son site industriel</h3>
-                        <p>Les 5 étapes clés pour une protection périmétrique efficace de vos entrepôts.</p>
-                        <div class="insight-footer">Lire l'article <svg viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" width="18" height="18" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></div>
-                    </div>
-                </article>
-                <article class="insight-card">
-                    <div class="insight-image" style="background-image: url('img/Charte Security F1-27-1.png');"></div>
-                    <div class="insight-content">
-                        <span class="insight-tag">Réglementation</span>
-                        <h3>La nouvelle norme de sécurité 2026</h3>
-                        <p>Tout ce que les dirigeants d'entreprises doivent savoir sur les nouvelles obligations
-                            légales.</p>
-                        <div class="insight-footer">Lire l'article <svg viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" width="18" height="18" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg></div>
-                    </div>
-                </article>
-            </div>
-            <div class="insights-cta">
-                <a href="blog.html" class="btn-insights-more">
-                    Afficher plus
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="20" height="20" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                </a>
-            </div>
+      </div>
+      <div class="sector-card">
+        <img src="img/formation/6.jpg" alt="Sociétés Industrielles">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-industry"></i></div>
+          <h3>Sociétés Industrielles</h3>
+          <p>Sécurisation de sites industriels, entrepôts et infrastructures de production.</p>
         </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="logo/logo.png" alt="Security Force One" class="logo">
-                        <span class="logo-text">Security Force One</span>
-                    </div>
-
-
-
-                </div>
-                <div class="footer-links">
-                    <h4>Liens rapides</h4>
-                    <ul>
-                        <li><a href="#solutions">Surveillance Humaine</a></li>
-                        <li><a href="#solutions">Sécurité Technologique</a></li>
-                        <li><a href="#solutions">Sécurité Mobile</a></li>
-                        <li><a href="#solutions">Conseil & Risques</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Pages populaires</h4>
-                    <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#insights">Actualités</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Secteurs</h4>
-                    <ul>
-                        <li><a href="#secteurs">Industrie</a></li>
-                        <li><a href="#secteurs">Tertiaire</a></li>
-                        <li><a href="#secteurs">Événementiel</a></li>
-                        <li><a href="#secteurs">Particuliers</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="footer-social-centered">
-                <a href="#" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Security Force One. Tous droits réservés.| Créé par <a href="https://wa.me/243810644455"
-                        target="_blank" style="color: inherit; text-decoration: underline;">Arnold Nzama</a></p>
-
-            </div>
+      </div>
+      <div class="sector-card">
+        <img src="img/formation/1.jpg" alt="Multinationales">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-globe"></i></div>
+          <h3>Multinationales</h3>
+          <p>Accompagnement sécuritaire des entreprises multinationales et leurs installations.</p>
         </div>
-    </footer>
+      </div>
+      <div class="sector-card">
+        <img src="img/formation/2.jpg" alt="Institutions Étatiques & Bancaires">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-university"></i></div>
+          <h3>Institutions Étatiques & Bancaires</h3>
+          <p>Protection des institutions étatiques, banques et établissements financiers.</p>
+        </div>
+      </div>
+      <div class="sector-card">
+        <img src="img/formation/3.jpg" alt="ONG Nationales & Internationales">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3>ONG Nationales & Internationales</h3>
+          <p>Accompagnement sécuritaire des organisations non gouvernementales.</p>
+        </div>
+      </div>
+      <div class="sector-card">
+        <img src="img/formation/4.jpg" alt="Hôtels & Stations-Services">
+        <div class="sector-overlay"></div>
+        <div class="sector-content">
+          <div class="sector-icon"><i class="fas fa-hotel"></i></div>
+          <h3>Hôtels & Stations-Services</h3>
+          <p>Gardiennage professionnel pour hôtels, stations-services et établissements d'accueil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Bouton retour en haut -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut de page">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header animate-on-scroll">
+      <span class="section-label">Témoignages</span>
+      <h2 class="section-title">Ce que disent <span>nos clients</span></h2>
+      <p class="section-desc">La confiance de nos partenaires est notre plus grande récompense.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"New Strong Protection a transformé notre approche de la sécurité. Leur professionnalisme et leur réactivité sont exemplaires. Nous nous sentons véritablement protégés."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JM</div>
+          <div>
+            <span class="author-name">Jean-Marie K.</span>
+            <span class="author-role">Directeur, Entreprise Minière — Haut-Uélé</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Depuis que nous avons confié notre sécurité à New Strong Protection, nous avons constaté une amélioration significative. Équipe sérieuse, disponible et compétente."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div>
+            <span class="author-name">Amina M.</span>
+            <span class="author-role">Responsable ONG — Kisangani</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Leur audit de sécurité nous a permis d'identifier des vulnérabilités que nous n'avions pas détectées. Un travail rigoureux et des recommandations très pertinentes."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PL</div>
+          <div>
+            <span class="author-name">Pierre L.</span>
+            <span class="author-role">Directeur Général, Banque — Isiro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+<!-- ===== INSIGHTS ===== -->
+<section class="insights-section" id="insights">
+  <div class="container">
+    <div class="insights-header animate-on-scroll">
+      <div>
+        <span class="section-label">Actualités</span>
+        <h2 class="section-title">Conseils & <span>Actualités</span></h2>
+      </div>
+      <a href="#" class="btn btn-outline-gold">Voir tout <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="insights-grid">
+      <article class="insight-card animate-on-scroll">
+        <div class="insight-img">
+          <img src="img/formation/5.jpg" alt="Gardiennage professionnel">
+          <span class="insight-tag">Innovation</span>
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta"><span><i class="fas fa-calendar"></i> Janvier 2026</span><span><i class="fas fa-tag"></i> Sécurité</span></div>
+          <h3>Protection maximale pour gardiennage professionnel</h3>
+          <p>Des équipements de protection fiables pour assurer la sécurité, la vigilance et la confiance sur chaque site.</p>
+          <a href="#" class="insight-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="insight-card animate-on-scroll">
+        <div class="insight-img">
+          <img src="img/formation/6.jpg" alt="Sécurité industrielle">
+          <span class="insight-tag">Conseil</span>
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta"><span><i class="fas fa-calendar"></i> Février 2026</span><span><i class="fas fa-tag"></i> Industrie</span></div>
+          <h3>Sécuriser son site industriel en 5 étapes</h3>
+          <p>Les étapes clés pour une protection périmétrique efficace de vos entrepôts et sites de production.</p>
+          <a href="#" class="insight-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="insight-card animate-on-scroll">
+        <div class="insight-img">
+          <img src="img/formation/1.jpg" alt="Normes sécurité 2026">
+          <span class="insight-tag">Réglementation</span>
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta"><span><i class="fas fa-calendar"></i> Mars 2026</span><span><i class="fas fa-tag"></i> Juridique</span></div>
+          <h3>Les nouvelles normes de sécurité 2026</h3>
+          <p>Tout ce que les dirigeants d'entreprises doivent savoir sur les nouvelles obligations légales en RDC.</p>
+          <a href="#" class="insight-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner animate-on-scroll">
+      <h2>Prêt à sécuriser votre entreprise ?<br><span>Contactez-nous dès aujourd'hui.</span></h2>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Devis Gratuit</a>
+        <a href="tel:+243898244292" class="btn btn-outline"><i class="fas fa-phone"></i> +243 898 244 292</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h3>Restez informé</h3>
+        <p>Recevez nos conseils en sécurité et nos actualités exclusives.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Votre adresse email" required>
+        <button type="submit"><i class="fas fa-paper-plane"></i> S'inscrire</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logo/logo.png" alt="New Strong Protection" class="logo">
+          <span class="logo-text">New Strong Protection</span>
+        </div>
+        <p>Entreprise congolaise de sécurité privée (NSP en sigle) existant depuis près de 4 ans. Notre dynamisme sur le terrain ne cesse de convaincre les utilisateurs de nos différents services. Votre partenaire de confiance pour la protection de vos biens et de vos personnes.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1BRuvQUmBj/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#gardiennage">Gardiennage Professionnel</a></li>
+          <li><a href="services.html#electronique">Sécurité Électronique</a></li>
+          <li><a href="services.html#audit">Audit de Sécurité</a></li>
+          <li><a href="services.html#formation">Formation</a></li>
+          <li><a href="services.html#escorte">Escorte & Protection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À Propos</a></li>
+          <li><a href="implantation.html">Implantation</a></li>
+          <li><a href="engagement.html">Engagement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+243 898 244 292<br>+243 817 203 38 / +243 810 726 697</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>soc@forceone.cd<br>admin@nsp.cd</span></div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>N°06, avenue PANGU<br>Commune de Ndjili, Q/1<br>Référence boulevard Kimputa<br>Immeuble Immaculé - 2ème niveau</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 New Strong Protection. Tous droits réservés. | Créé par <a href="https://wa.me/243810644455" target="_blank">Arnold Nzama</a></p>
+      <div class="footer-bottom-links">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
-
 </html>
